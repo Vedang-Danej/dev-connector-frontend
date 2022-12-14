@@ -5,7 +5,7 @@ import axios from 'axios';
 import store from './store';
 import { LOGOUT } from './actions/types';
 
-const baseURL = 'http://localhost:5000/api';
+const baseURL = 'https://dev-connector-api.fly.dev/api';
 axios.interceptors.request.use(
   (config) => {
     config.url = baseURL + config.url;
